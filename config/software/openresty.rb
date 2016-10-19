@@ -93,7 +93,7 @@ build do
 
   # Currently LuaJIT doesn't support POWER correctly so use Lua51 there instead
   if ppc64? || ppc64le? || s390x?
-    configure << "--with-lua51=#{install_dir}/embedded/lib"
+    configure << "--with-lua51=#{install_dir}/embedded"
   else
     configure << "--with-luajit"
   end
