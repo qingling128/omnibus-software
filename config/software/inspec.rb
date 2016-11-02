@@ -25,6 +25,7 @@ source git: "https://github.com/chef/inspec.git"
 dependency "ruby"
 dependency "rubygems"
 dependency "bundler"
+dependency "nokogiri"
 
 build do
   env = with_standard_compiler_flags(with_embedded_path)
